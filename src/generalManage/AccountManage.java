@@ -160,5 +160,4 @@ public class AccountManage implements General<Account> {
         String phoneNB  = phoneNB();
         return new Account(nameAC, pass, age, email, phoneNB);
     }
-
 }

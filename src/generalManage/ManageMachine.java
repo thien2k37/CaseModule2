@@ -68,16 +68,6 @@ public class ManageMachine implements General<Machine> {
         System.out.println("-----------------------------------------");
     }
 
-    //done
-    public void findPcById(){
-        System.out.println("Nhập id để tìm máy");
-        int id = check.checkInteger();
-        if(findIndexById(id) == -1) {
-            System.out.println(id + " ID này ko có trong danh sách.");
-        }else {
-            System.out.println(getMachineList().get(findIndexById(id)));
-        }
-    }
 
     @Override
     //done

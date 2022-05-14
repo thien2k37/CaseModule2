@@ -18,6 +18,7 @@ public class Main {
             FileAccountCSV accountCSV = new FileAccountCSV();
             int select = -1;
             while (select != 0) {
+
                 System.out.println("Menu Đăng Nhập máy chủ ");
                 System.out.println("1. Đăng Nhập");
                 System.out.println("2. Đăng Ký");
@@ -54,7 +55,7 @@ public class Main {
                                                             |*| 2.  Thêm 1 máy mới vào danh sách    |*|
                                                             |*| 3.    Sửa đổi thông tin của máy     |*|
                                                             |*| 4.     Xóa 1 máy khỏi danh sách     |*|
-                                                            |*| 5.     Hiển thị máy tính đang mở    |*|
+                                                          
                                                             |*|=======* Vui lòng nhập tiếp * =======|*|
                                                             """
                                             );
@@ -78,9 +79,6 @@ public class Main {
                                                     case 4 -> {
                                                         System.out.println("Xóa 1 máy khỏi danh sách");
                                                         machine.delete();
-                                                    }
-                                                    case 5 -> {
-                                                        machine.findPcById();
                                                     }
                                                     default -> System.out.println("Nhập lại boss ơi !");
                                                 }
@@ -193,7 +191,7 @@ public class Main {
                                         }
                                         case 3 -> {
                                             System.out.println(">>>>>>>>>Dịch Vụ<<<<<<<<<<");
-                                            System.out.println("chọn 1 máy");
+                                            System.out.println("Hệ thống đang nâng cấp");
                                             machine.showPc();
                                         }
                                         case 0 -> AccountManage.currentName = null;
@@ -210,7 +208,7 @@ public class Main {
                     }
                 }
             }
-            System.out.println("***********************************************************************");
+
         }catch (Exception e) {
             e.printStackTrace();
             System.out.println("Nhập Lại!");
